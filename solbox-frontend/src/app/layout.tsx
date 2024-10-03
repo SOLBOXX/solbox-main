@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import 'boxicons/css/boxicons.min.css';
 import { SolanaWalletProvider } from "../../context/WalletProvider";
 import "./globals.css";
 
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[url('/bg.png')] bg-cover bg-no-repeat h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[url('/bg.png')] bg-cover bg-no-repeat min-h-screen`}
       >
         <SolanaWalletProvider>
         <main className="flex-grow max-w-full p-0 m-0">{children}</main>
