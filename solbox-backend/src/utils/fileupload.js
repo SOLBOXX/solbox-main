@@ -1,11 +1,13 @@
 import multer from "multer";
-import {v2 as cloudinary }from "cloudinary"
+import {v2 as cloudinary }from "cloudinary";
+import { configDotenv } from "dotenv";
+configDotenv()
 
 
 cloudinary.config({
     cloud_name: 'dvvxydanl',
-    api_key: '975934235231868',
-    api_secret: 'WriBxsRcpg9sS53l2cmfjpLyRHY'
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET
 })
 
 
