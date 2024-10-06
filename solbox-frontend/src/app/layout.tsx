@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import 'boxicons/css/boxicons.min.css';
 import { SolanaWalletProvider } from "../../context/WalletProvider";
+import ClientLayout from "./ClientLayout";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Solbox",
@@ -28,10 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[url('/bg.png')] bg-cover bg-no-repeat min-h-screen`}
+        className={` antialiased bg-[url('/bg.png')] bg-cover bg-no-repeat min-h-screen`}
       >
         <SolanaWalletProvider>
-        <main className="flex-grow max-w-full p-0 m-0">{children}</main>
+        <main className="flex-grow max-w-full p-0 m-0"><ClientLayout>{children}</ClientLayout></main>
         </SolanaWalletProvider> 
       </body>
     </html>

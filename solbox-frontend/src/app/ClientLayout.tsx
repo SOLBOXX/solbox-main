@@ -1,0 +1,29 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+import Navigation from '../../component/Navigation';
+
+export default function ClientLayout({ children }: { children: React.ReactNode }) {
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
+  //const router = useRouter();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const user = localStorage.getItem('user'); 
+    if (user) {
+      setIsLoggedIn(true);
+    }
+  }, []);
+  const hideNavigationPaths = [ '/', '/start', '/login', '/signup', '/playing'];
+
+
+  return (
+    <div className="flex flex-col min-h-screen p-4">
+      <main className="flex-grow">{children}</main>
+      <div className='items-center'>
+      {isLoggedIn && !hideNavigationPaths.includes(pathname) && <Navigation />}
+      </div>
+    </div>
+  );
+}

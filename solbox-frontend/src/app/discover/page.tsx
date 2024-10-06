@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import Skeleton from '../../../../component/utils/Skeleton';
+import Skeleton from '../../../component/utils/Skeleton';
 import Link from 'next/link';
 
 
@@ -18,8 +18,14 @@ export default function SongList() {
 
   return (
     <div className='mt-8 flex flex-col justify-center'>
+      <div className='items-center text-white'>
+        <input type="text" 
+        placeholder='What do you want to listen to?'
+        className='bg-lapis text-white my-3 outline-none w-full p-2 rounded-3xl'
+        />
+      </div>
       <div className='my-2'>
-        <h2 className='text-white font-bold text-2xl py-4'>Recently Played</h2>
+        <h2 className='text-white font-bold text-2xl py-4'>Explore genres</h2>
         <div className="flex gap-3">
           {loading ? (
               <>
@@ -50,7 +56,7 @@ export default function SongList() {
         </div>
       </div>  
       <div className='my-2'>
-        <h2 className='text-white font-bold text-2xl py-4'>Trending</h2>
+        <h2 className='text-white font-bold text-2xl py-4'>Browse all</h2>
         <div className="flex gap-3">{loading ? (
               <>
                 <Skeleton />

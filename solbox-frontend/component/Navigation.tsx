@@ -13,7 +13,7 @@ export default function Navigation() {
             </Link>
         </li>
         <li>
-            <Link href='' className='flex flex-col items-center text-white hover:text-indigo'>
+            <Link href='/discover' className='flex flex-col items-center text-white hover:text-indigo'>
                 <i className='bx bx-search bg-white rounded-full text-lapis hover:bg-indigo hover:text-white w-[25px] h-[25px] flex items-center justify-center' ></i>
                 <p className='text-sm'>Discover</p>
             </Link>
@@ -25,7 +25,7 @@ export default function Navigation() {
             </Link>
         </li>
         <li>
-            <Link href='/home/dashboard'>
+            <Link href='/dashboard'>
                 <div className='flex flex-col items-center text-white hover:text-indigo'>
                 <i className='bx bx-cog bx-sm' ></i>
                 <p className='text-sm'>Settings</p>
