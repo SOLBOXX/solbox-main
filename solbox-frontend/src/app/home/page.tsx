@@ -4,7 +4,7 @@ import Navigation from './navbar/page'
 
 export default function Home() {
   return (
-    <div className='h-full px-4'>
+    <div>
       <SongList />
       <Navigation />
     </div>

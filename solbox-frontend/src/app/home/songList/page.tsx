@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import Skeleton from '../../../../component/utils/Skeleton';
+import Link from 'next/link';
 
 
 export default function SongList() {
@@ -27,6 +28,7 @@ export default function SongList() {
               </>
             ) : (
               <>
+              <Link href='/home/songList/playing'>
                 <Image 
                     src='/artist.png'
                     alt="image of an artist"
@@ -34,7 +36,7 @@ export default function SongList() {
                     height={400}
                     className='rounded-2xl'
                     priority
-                />
+                /></Link>
                 <Image 
                     src='/guitarist.png'
                     alt="image of an artist"

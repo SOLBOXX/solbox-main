@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,7 +7,7 @@ export default function Navigation() {
     <div className='bottom-1 fixed w-11/12 animate-slideUp'>
       <ul className='flex justify-between px-7 py-3 rounded-[2rem] bg-lapis mb-2'>
         <li>
-            <Link href='' className='flex flex-col items-center text-white hover:text-indigo'>
+            <Link href='/home' className='flex flex-col items-center text-white hover:text-indigo'>
                 <i className='bx bxs-home bx-sm'></i>
                 <p className='text-sm'>Home</p>
             </Link>
@@ -24,7 +25,7 @@ export default function Navigation() {
             </Link>
         </li>
         <li>
-            <Link href=''>
+            <Link href='/home/dashboard'>
                 <div className='flex flex-col items-center text-white hover:text-indigo'>
                 <i className='bx bx-cog bx-sm' ></i>
                 <p className='text-sm'>Settings</p>
