@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      
       keyframes: {
         slideUp: {
           '0%': { transform: 'translateY(100%)', opacity: '0' },

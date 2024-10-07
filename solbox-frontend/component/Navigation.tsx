@@ -1,11 +1,12 @@
 'use client'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 export default function Navigation() {
   return (
-    <div className='bottom-1 fixed w-11/12 animate-slideUp'>
-      <ul className='flex justify-between px-7 py-3 rounded-[2rem] bg-lapis mb-2'>
+    <div className=''>
+      <ul className='flex py-2 px-5 justify-between items-center rounded-3xl bg-lapis mb-2'>
         <li>
             <Link href='/home' className='flex flex-col items-center text-white hover:text-indigo'>
                 <i className='bx bxs-home bx-sm'></i>
@@ -14,7 +15,13 @@ export default function Navigation() {
         </li>
         <li>
             <Link href='/discover' className='flex flex-col items-center text-white hover:text-indigo'>
-                <i className='bx bx-search bg-white rounded-full text-lapis hover:bg-indigo hover:text-white w-[25px] h-[25px] flex items-center justify-center' ></i>
+                <Image
+                  src='/discover icon.png'
+                  alt='search icon'
+                  width={30}
+                  height={30}
+                  className='hover:bg-indigo'
+                 /> 
                 <p className='text-sm'>Discover</p>
             </Link>
         </li>
@@ -25,11 +32,9 @@ export default function Navigation() {
             </Link>
         </li>
         <li>
-            <Link href='/dashboard'>
-                <div className='flex flex-col items-center text-white hover:text-indigo'>
+            <Link href='/dashboard' className='flex flex-col items-center text-white hover:text-indigo'>
                 <i className='bx bx-cog bx-sm' ></i>
                 <p className='text-sm'>Settings</p>
-                </div>
             </Link>
         </li>
       </ul>

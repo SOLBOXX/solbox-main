@@ -43,7 +43,7 @@ export default function page() {
         <p className='text-white font-bold leading-6 py-5 text-center'>By signing up on <Link href='/' className='text-primary'>SOLBOX</Link>, you agree to our 
         <Link href='' className='text-primary'>Terms of Service</Link> and <Link href='' className='text-primary'>Privacy Policy</Link>.</p>
 
-        <Link href="/login" className='mt-10 p-3 font-bold text-2xl bg-primary text-white rounded-xl w-full text-center'>Sign up</Link>
+        <Link href="/userDetails" className='mt-10 p-3 font-bold text-2xl bg-primary text-white rounded-xl w-full text-center'>Sign up</Link>
         <p className='text-white py-2 font-semibold text-center'>Have a user account? <Link href='/login' className='text-primary pl-3'>Log in</Link></p>
       </form>
     </div>

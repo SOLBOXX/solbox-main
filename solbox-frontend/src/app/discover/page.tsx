@@ -18,10 +18,19 @@ export default function SongList() {
 
   return (
     <div className='mt-8 flex flex-col justify-center'>
-      <div className='items-center text-white'>
-        <input type="text" 
+      <div className='flex items-center text-white bg-lapis w-full rounded-3xl gap-3'>
+        <Image
+          src='/discover icon.png'
+          alt='search icon'
+          width={30}
+          height={30}
+          className='mx-3'
+        />
+
+        <input 
+        type="text" 
         placeholder='What do you want to listen to?'
-        className='bg-lapis text-white my-3 outline-none w-full p-2 rounded-3xl'
+        className=' text-white my-3 w-full outline-none placeholder:text-white bg-lapis'
         />
       </div>
       <div className='my-2'>

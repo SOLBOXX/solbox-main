@@ -21,11 +21,11 @@ export default function page() {
       </div>
 
       <div className='grid grid-cols-4 gap-3 my-6'>
-        <Link href='' className='bg-lapis text-white font-bold text-sm px-3 rounded-lg flex flex-col justify-center items-center'>
+        <Link href='/deposit' className='bg-lapis text-white font-bold text-sm px-3 rounded-lg flex flex-col justify-center items-center'>
             <i className='bx bx-arrow-to-bottom bx-md'></i>
             <p className='py-1'>Deposit</p>
         </Link>
-        <Link href='' className='bg-lapis text-white font-bold text-sm px-3 rounded-lg flex flex-col justify-center items-center'>
+        <Link href='/withdraw' className='bg-lapis text-white font-bold text-sm px-3 rounded-lg flex flex-col justify-center items-center'>
             <i className='bx bx-arrow-to-top bx-md'></i>
             <p className='py-1'>Withdraw</p>
         </Link>
