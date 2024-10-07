@@ -5,7 +5,7 @@ const SplashScreen: React.FC = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <Image 
-        src="/logo-no-bg.svg"
+        src="/Solbox.png"
         alt="Solbox Logo" 
         className="animate-bounce" 
         width={200} 
