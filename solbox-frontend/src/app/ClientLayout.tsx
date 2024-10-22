@@ -19,7 +19,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
 
 
   return (
-    <div className="flex flex-col min-h-screen p-4">
+    <div className="flex flex-col min-h-screen px-4">
       <main className="flex-grow">{children}</main>
       <div className='items-center bottom-2 fixed w-11/12 animate-slideUp'>
       {isLoggedIn && !hideNavigationPaths.includes(pathname) && <Navigation />}
