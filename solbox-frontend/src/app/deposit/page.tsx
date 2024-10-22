@@ -33,7 +33,7 @@ export default function Deposit() {
             </label>
 
             <div className="flex items-center justify-between mt-2 rounded-md shadow-lg bg-lapis p-4">
-                {/* Coin select (on the left) */}
+                
                 <div className="flex items-center pl-3">
                     {selectedCoin === 'SOL' ? (
                         <Image src='/SOL.png' alt='sol icon' width={20} height={20} />
