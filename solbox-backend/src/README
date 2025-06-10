@@ -1,0 +1,37 @@
+Solbox 🎶
+
+Solbox is a decentralized music streaming protocol built on the Solana blockchain. It allows artists to mint songs as NFTs, stake for streaming, and earn rewards based on community engagement.
+
+🌍 Vision
+
+Integrating Solbox into the everything app (X), we aim to create an innovative music experience that combines blockchain transparency with community-driven discovery. Through staking, minting, and engagement-based rewards, Solbox redefines music streaming.
+
+⚙️ Tech Stack
+
+Blockchain: Solana (Rust, Anchor)
+
+Frontend: React, Next.js, TailwindCSS
+
+Smart Contracts: Minting, staking, reward systems
+
+
+🧠 Key Features
+
+NFT-based song publishing
+
+Staking-to-stream model
+
+Reward-sharing pool
+
+Community-driven discovery
+
+
+🚀 Try It Locally
+
+git clone https://github.com/SOLBOXX/solbox-main.git
+cd solbox-main
+# Follow setup instructions in frontend and contracts
+
+📜 License
+
+This project is licensed under the MIT License. See LICENSE for more details.
